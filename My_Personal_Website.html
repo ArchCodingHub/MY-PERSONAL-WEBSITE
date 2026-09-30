@@ -1,0 +1,190 @@
+<HTML>
+    <HEAD>
+        <TITLE>
+        MY PERSONAL WEBSITE
+        </TITLE>
+        <STYLE>
+            body {
+                margin: 10;
+                background-color: white;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: cornflowerblue;
+                font-size: 21px;
+                line-height: 1.3;
+            }
+            .header {
+                background-color: rgb(151, 144, 215);
+                margin: 8px 15px 12px 15px;
+                padding: 40px;
+                text-align: center;
+                border: 8px , solid, rgb(255, 244, 244);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .website-name{
+                font-family: "Comic Sans MS", cursive;
+                font-size: 45px;
+                color: black;
+                font-weight: bold;
+            }
+            .navigation {
+            display: flex;
+            gap: 22px;
+            margin-top: 20px;
+            }
+            .navigation button {
+                background: none;
+                border: none;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 30px;
+                font-weight:bold ;
+                cursor: pointer;
+                color: black;
+            }
+            .navigation button:hover {
+                color: #ff6666;
+            }
+            .content {
+                background-color: rgb(220, 180, 132);
+                margin:0 3px;
+                padding: 20px;
+                min-height: 40px;
+            }
+            .page{
+                display: none;
+            }
+            .page.active {
+                display: block;
+            }
+            p {
+                font-size: 21px;
+                line-height: 1.3;
+                color: cornflowerblue;
+            }
+            ul {
+                font-size: 21px;
+                line-height: 1.3;
+                color: teal;
+            }
+            .project{
+                background-color: rgb(220, 180, 132);
+                padding: 20px;
+                margin: 20px;
+                border-radius: 10px;
+                display: none;
+            }
+            #projects {
+                display: none;
+            }
+            #trivia {
+                display: none;
+            }
+            .ending-box {
+                background-color: rgb(151, 144, 215);
+                color: white;
+                padding: 1px;
+                margin: 50px 20px 20px 20px;
+                border-radius: 15px;
+                text-align: center;
+            }
+
+            .ending-box p {
+                font-size: 20px;
+            }
+        </STYLE>
+    </HEAD>
+    <BODY>
+        <HEADER CLASS="HEADER">
+            <DIV CLASS="website-name">
+                MY PERSONAL WEBSITE
+            </DIV>
+
+            <DIV CLASS="navigation">
+                <BUTTON onclick="showPage('home')">HOME</BUTTON>
+                <BUTTON onclick="showPage('projects')">MY PROJECTS</BUTTON>
+                <BUTTON onclick="showPage('trivia')">Trivia Time</BUTTON>
+            </DIV>
+        </HEADER>
+        <script>
+        function showPage(page) {
+            document.getElementById("home").style.display = "none";
+            document.getElementById("projects").style.display = "none";
+            document.getElementById("trivia").style.display="none";
+
+            document.getElementById(page).style.display = "block";
+        }
+        </script>
+        <section id="home">
+            <font color="red">
+            <h1> ABOUT ME</h1>
+            </font>
+            <p> Hello Everyone !!! Welcome to a little corner of my life. In this website I will be telling you all about myself , my hobbies,
+                my projects so far, and my achievements. <br><br>
+                So on that note, I am <B>ARCHIT GUPTA</B>, a 13 year old Indian who studies in class 8th.<br>
+                <font color="black"><h1>MY FAVOURITES</h1></font>
+                In this section I will be talking about my favourite things. Some of them are:
+                <ul>
+                    <li>Coding : I have always dreamt of becoming a software engineer and i have been working to become one sice the previous year. I have always tried to learn more and develop my skills.</li>
+                    <li>Playing Football and Tennis : Playing football and tennis are my two greatest hobbies. I have been playing football since four years and tennis from the past one. These sports encourage me to get up , play and give my best even on a bad day.</li>
+                    <li>Sleeping : This is what i do the best. I love sleeping a lot. I can sleep upto 12 hours on holidays. This sometimes get me into trouble too.</li>
+                    <li>Watching TV : I love watching movies and reality shows a lot. It is my way of spending time when I am free. My favourite movies are - Avengers and Harry Potter Series. My favourite series is Stranger Things.</li>
+                    <li>Playing Brain Games : Playing brain games increase my IQ and make me better at problem solving which also helps me for coding.</li>
+                </ul>
+                <font color="black"><h1>MY  NON-FAVOURITES</h1></font>
+                Along with my favourites, I would also like to tell you about the things that I don't like at all.
+                <ul>
+                    <li>Waking Up Early : I like going to school , but the worst part is waking up early. I never like if I am told to wake up unnecessarily.</li>
+                    <li>Rainy Days : This is something that most people like , but i dislike it because on those days , I am not able to play any sports and have to wait indoors for the ground to dry up</li>
+                    <li>Spoilers : I don't like getting spoilers for any movie or web series that I am watching. When a new movie comes out, I immediately tell my friends to not give me the spoiler.</li>
+                </ul>
+                <div class="ending-box">
+                    <font color="black">Thanks for visiting my little corner of the internet 💜. You can learn more about me by clicking the links above.</font>
+                </div>
+            </p>
+        </section>
+        <section id="projects">
+            <font color="red">
+                <h1>MY PROJECTS</h1>
+            </font>
+            <p>In this page , I am going to tell you about the projects I have completed and those that I am working on.
+                I have already completed some projects like :
+                <ul>
+                    <Li>A pygame game in which the user has to dodge incoming missiles. You can check out the game from here - <br>
+                        <a href = "https://github.com/ArchCodingHub/THE-SPACE-DODGER/releases/tag/v1.0" target="_blank"> Check Out The Space Dodger Game</a>
+                    </Li>
+                    <li>I also made a text-based story game using HTML , CSS, JAVASCRIPT and Python. The link is not available right now.</li>
+                </ul>
+                There are also some projects that I am currently orking on and will share in the coming time. 
+                <ul>
+                    <li>JARVIS : A Voice Assisted Virtual Assistant that takes english commands from the user and works accordingly.</li>
+                    <li>GameQuest : An application which allows the user to set in game challenges, earn XP and thus getting exciting rewards.</li>
+                </ul>
+                <div class="ending-box">
+                    <font color="black">
+                        So, this was all about my projects so far. In the next part I will be telling you about my achievements.
+                    </font>
+                </div>
+            </p>
+        </section>
+        <section id="trivia">
+            <font color="red">
+                <h1>DID YOU KNOW?</h1>
+            </font>
+            <P>
+                <ol>
+                    <li><b>What I wanted to become when I was younger ?</b> I had always wanted to become the fictional superhero who I had most recently watched saving the city.</li>
+                    <li><b>What my biggest achievment is so far ?</b> My biggest achivement so far is reprsenting my state in 15th Under 15 NATIONAL FOOTBALL CHAMPIONSHIP</li>
+                    <li><b>Wether I am a dog or a cat person?</b> I am an big animal lover , so asking the question cat or a dog is pointless and I prefer to not give the answer of that.</li>
+                    <li><b>What is something i will NEVER say no to?</b> Well I can never say no to playing football. This is my passion. I have always wanted to go pro in the sport and maybe play for a huge club in futute.</li>
+                    <li><b>Wether I thing more or just execite what I want?</b> So, I prefer to just execute what is on my mid instead of spending long hours planning to do it. It is a good habit in most cases , but also gets me into trouble quite a few times.</li>
+                </ol>
+                <div class="ending-box">
+                    <font color="black">
+                        And these were some facts abut me. I hope you all liked it !! 
+                    </font>
+                </div>
+            </P>
+        </section>
+    </BODY>
+</HTML>
